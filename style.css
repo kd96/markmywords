@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    word-wrap: break-word;
+    overflow-y: hidden;
+}
+#main{
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15mm 1fr;
+    grid-template-columns: 3fr 2fr;
+}
+#header{
+    background: #000000;
+    grid-column: span 2;
+    padding: 5mm;
+    color: #ffffff;
+}
+#mdbox{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background: #c0e0ff;
+    color: #000c14;
+    border: none;
+    font-size: 5mm;
+    padding: 5mm;
+    font-family: monospace;
+}
+#mdbox:focus{
+    border: none;
+    outline: none;
+}
+#preview{
+    overflow-y: scroll;
+    padding: 25.4mm;
+}

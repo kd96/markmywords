@@ -1,0 +1,124 @@
+@fg: #00060a;
+@bg: #f0f0f0;
+@theme: #10d060;
+@font1: Montserrat Light;
+@font2: Cantarell;
+
+#preview{
+    background: @bg;
+    color: @fg;
+    font-family: @font2;
+}
+
+h1{
+    font-family: @font1;
+    font-size: 9mm;
+    font-weight: normal;
+    border-bottom: 0.5mm solid @theme;
+    color: @theme;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+h2{
+    font-family: @font1;
+    font-size: 6.5mm;
+    font-weight: normal;
+    padding: 0px;
+    margin: 15mm 0mm 2mm 0mm;
+    color: @theme;
+}
+
+h3{
+    font-family: @font1;
+    font-size: 5.5mm;
+    font-weight: normal;
+    letter-spacing: 0.3mm;
+    padding: 0px;
+    margin-top: 10mm;
+    margin-bottom: 2mm;
+}
+
+h4,h5,h6{
+    font-size: 4.5mm;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 3mm;
+    color: @theme;
+}
+
+p{
+    font-size: 4.5mm;
+    text-align: justify;
+    padding: 0px;
+    margin: 0px;
+}
+
+mark{
+    background: @theme;
+}
+
+ul,ol{
+    padding: 1mm 0mm;
+    margin: 0px;
+    list-style-type: none;
+}
+ul li::before{
+    content: "⬡";
+    padding-right: 2mm;
+    font-weight: bold;
+    color: @theme;
+}
+ol li{
+    counter-increment: step-counter;
+}
+ol li::before{
+    content: counter(step-counter);
+    padding-right: 2mm;
+    font-weight: bold;
+    color: @theme;
+}
+
+a{
+    color: @theme;
+}
+
+img{
+    margin: 2mm 0mm;
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-collapse: collapse;
+    margin: 2mm 0mm;
+}
+th{
+    background: @theme;
+    color: @bg;
+}
+td,th{
+    border: 0.5mm solid @theme;
+    padding: 2mm;
+}
+
+sup a{
+    text-decoration: none;
+}
+
+hr.footnotes-sep{
+    display: none;
+}
+
+.footnotes p{
+    display: inline;
+}
+
+blockquote{
+    padding: 2mm;
+    margin: 0px;
+    background: @fg;
+    color: @bg;
+}
